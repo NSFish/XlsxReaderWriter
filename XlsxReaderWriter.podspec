@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target     = '10.10'
   s.source             = { :git => "https://github.com/renebigot/XlsxReaderWriter.git", :tag => s.version.to_s }
   s.source_files       = "XlsxReaderWriter/*.{h,m}"
+  s.osx.source_files   = 'XlsxReaderWriterMac/*.h'
   s.exclude_files      = "ThirdParties"
   s.frameworks         = "Foundation"
   s.requires_arc       = true
